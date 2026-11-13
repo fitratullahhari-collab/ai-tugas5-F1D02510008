@@ -1,0 +1,15 @@
+{
+  "judul": "Kesiapsiagaan banjir dan banjir bandang",
+  "batas": "Aturan berasal dari 2 sumber (buku panduan BNPB dan satu artikel jurnal BPPT) dan hanya mencakup beberapa tanda banjir bandang serta tindakan dasar saat banjir. Tanda-tanda di lapangan sangat bergantung pada kondisi lokal. Hasilnya saran awal, bukan keputusan akhir; selalu ikuti informasi resmi dari BPBD, BNPB, atau BMKG dan perintah petugas.",
+  "sumber": {
+    "S1": "Siaga Bencana Banjir, dalam buku Tanggap Tangkas Tangguh Menghadapi Bencana, BNPB (diunggah di PPID KKP), https://ppid.kkp.go.id/media/uploads/document_information_public/4._Siaga_Bencana_Banjir.pdf, diakses 13 Nov 2026",
+    "S2": "Seno Adi, Karakterisasi Bencana Banjir Bandang di Indonesia, Jurnal Sains dan Teknologi Indonesia Vol. 15 No. 1, April 2013, BPPT, https://media.neliti.com/media/publications/130039-ID-karakterisasi-bencana-banjir-bandang-di.pdf, diakses 13 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["air sungai keruh", "muka air sungai tiba-tiba surut"], "mode": "dan", "maka": "aliran sungai di hulu terbendung", "sumber": "S2"},
+    {"id": "R2", "jika": ["aliran sungai di hulu terbendung", "suara gemuruh dari arah hulu"], "mode": "atau", "maka": "tanda bahaya banjir bandang", "sumber": "S2"},
+    {"id": "R3", "jika": ["tanda bahaya banjir bandang", "air banjir mulai naik di sekitar saya"], "mode": "atau", "maka": "evakuasi segera ke tempat yang lebih tinggi", "sumber": "S1"},
+    {"id": "R4", "jika": ["saya sedang mengemudi di jalan tergenang", "air banjir mulai naik di sekitar saya"], "mode": "dan", "maka": "tinggalkan mobil dan menuju tempat yang lebih tinggi", "sumber": "S1"},
+    {"id": "R5", "jika": ["saya berdiri di dalam air banjir", "peralatan listrik masih tersambung"], "mode": "dan", "maka": "bahaya tersengat listrik, jangan sentuh peralatan listrik", "sumber": "S1"}
+  ]
+}
